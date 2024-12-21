@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background: linear-gradient(135deg, #4caf50, #8bc34a);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Form Section */
+.form-section,
+.filter-section,
+.sort-section,
+.expense-list-section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn.primary {
+    background: #4caf50;
+    color: #fff;
+}
+
+.btn.secondary {
+    background: #2196f3;
+    color: #fff;
+}
+
+.btn.danger {
+    background: #f44336;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Filters Section */
+/* Filters Section */
+.filter-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.filter-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filter-card label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-card input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.filter-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Icons Styling */
+.filter-card label i {
+    font-size: 1.2rem;
+    color: #4caf50;
+}
+
+/* Responsive Filters */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+/* Sort Section */
+.sort-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Expense List Section */
+.expense-list-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.expense-list-section table th,
+.expense-list-section table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.expense-list-section table th {
+    background: #f0f0f0;
+}
+
+.expense-list-section .total {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-group input,
+    .filter-group input {
+        width: 100%;
+    }
+
+    .sort-buttons {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .filter-group {
+        flex-direction: column;
+    }
+}

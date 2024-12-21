@@ -1,8 +1,8 @@
-💰##**Expense Tracker**##
+💰#**Expense Tracker**
 
 A simple yet powerful Expense Tracker web application designed to help you track and manage your daily expenses. Built with HTML, CSS, JavaScript, and utilizing Data Structures and Algorithms for efficient management of expense data.
 
-✨#**Features**#
+✨##**Features**
 
 📝 **Track Expenses**: Add, update, and delete your expenses.
 
@@ -14,7 +14,7 @@ A simple yet powerful Expense Tracker web application designed to help you track
 
 🎯 **Budget Management**: Set a monthly budget and track your expenses against the budget.
 
-🔧 #**Technologies Used**#
+🔧 ##**Technologies Used**
 
 **Frontend**:
 
@@ -34,11 +34,11 @@ A simple yet powerful Expense Tracker web application designed to help you track
 
 🕵️‍♀️ Filtering algorithms (for filtering based on categories, date range, etc.)
 
-🌐 #**Live Demo**#
+🌐 ##**Live Demo**
 
 Check out the live application here: [Expense Tracker](smartbudgetbuddy.netlify.app)
 
-🚀 #**Installation**#
+🚀 ##**Installation**
 
 **Clone the repository**:
 Open your terminal/command prompt and run the following command:
@@ -51,7 +51,7 @@ git clone https://github.com/sriharshithab37/expense-tracker.git
 cd expense-tracker
 ```
 
-🛠️#**Usage**#
+🛠️##**Usage**
 
 ➕ **Add Expense**: Click the "Add Expense" button to enter the details of an expense, including category, amount, and date.
 
@@ -63,12 +63,11 @@ cd expense-tracker
 
 🔍 **Filter Expenses**: Use the filter dropdown to view only certain categories or date ranges.
 
-📚 #**How It Works**#
+📚 ##**How It Works**
 
 **Adding Expenses**:
 When you enter expense details, the app stores the information in an array. Each expense is represented as an object containing fields like amount, date, and category.
-```
-javascript
+```javascript
 const expense = {
     amount: 100,
     date: '2024-12-21',
@@ -79,15 +78,13 @@ expenses.push(expense);
 
 **Sorting Expenses**:
 Sorting algorithms are applied to arrange the array based on the selected criteria (e.g., date, amount). Efficient sorting methods like Quick Sort or Merge Sort ensure smooth performance.
-```
-javascript
+```javascript
 expenses.sort((a, b) => a.amount - b.amount); // Sort by amount
 ```
 
 **Filtering Expenses**:
 Filters are implemented using algorithms that iterate through the array to match specific conditions (e.g., category or date range) and return the filtered results.
-```
-javascript
+```javascript
 const filteredExpenses = expenses.filter(expense => expense.category === 'Food');
 Linked Lists for Dynamic Data:
 Linked Lists are used internally to handle dynamic addition and removal of expenses, ensuring that the app performs well even with frequent updates.
@@ -95,15 +92,14 @@ Linked Lists are used internally to handle dynamic addition and removal of expen
 
 **Budget Tracking**:
 The app calculates the total expenses for the month and compares it against the user-defined budget, providing warnings if the budget limit is exceeded.
-```
-javascript
+```javascript
 const totalExpenses = expenses.reduce((sum, expense) => sum + expense.amount, 0);
 if (totalExpenses > monthlyBudget) {
     alert('Budget Exceeded!');
 }
 ```
 
-🔮 #**Future Enhancements**#
+🔮 ##**Future Enhancements**
 
 🔐 **User Authentication**: Allow users to create accounts and save their expense data across sessions, making it accessible from any device.
 
@@ -113,7 +109,7 @@ if (totalExpenses > monthlyBudget) {
 
 📈 **Expense Trends Visualization**: Add a graph to visualize trends in expenses over time, helping users better manage their spending.
 
-📬#**Contact**#
+📬##**Contact**
 
 Feel free to reach out for collaboration or feedback:
 - **Email**: sriharshitha.b06@gmail.com
